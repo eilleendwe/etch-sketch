@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 
-
 function createBoard(size){
     let board = document.querySelector('.board');
 
@@ -44,8 +43,10 @@ function createBoard(size){
     }
 }
 
+let inputSize = document.getElementById('inputSize');
+
 function getSize(){
-    let input = prompt("Size of the board");
+    let input = inputSize.value;
     let message = document.getElementById('message');
     if (input == ""){
         message.textContent = "Please give a number";
@@ -89,6 +90,6 @@ function setColor(colorChoice){
 }
 
 function resetBoard(){
-    let divs = document.querySelectorAll("div");
+    let divs = document.querySelector("div .board");
     divs.forEach((div) => div.style.backgroundColor = 'white');
 }
