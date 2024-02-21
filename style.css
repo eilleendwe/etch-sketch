@@ -18,6 +18,11 @@ body {
     align-items: center;
     width: 500px;
     justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.header p {
+    margin-top: 14px;
 }
 
 .board{
@@ -25,7 +30,7 @@ body {
     height: 500px;
     display: grid;
     border: 1px solid black;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .footer{
@@ -33,5 +38,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 500px;
+    margin: 10px 0px;
 }
 
