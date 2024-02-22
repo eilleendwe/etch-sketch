@@ -92,6 +92,6 @@ function setColor(colorChoice){
 }
 
 function resetBoard(){
-    let divs = document.querySelector("div .board");
+    let divs = document.querySelectorAll(".board div");
     divs.forEach((div) => div.style.backgroundColor = 'white');
 }
