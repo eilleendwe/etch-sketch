@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     })
     
+    //button untuk menjalankan input ukuran board yg diberikan
     let popupBtn = document.getElementById('popup');
     popupBtn.addEventListener("click", function() {
         let size = getSize();
@@ -43,6 +44,7 @@ function createBoard(size){
     }
 }
 
+//mengambil input untuk ukuran board
 let inputSize = document.getElementById('inputSize');
 
 function getSize(){
