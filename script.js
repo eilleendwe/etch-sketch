@@ -1,20 +1,23 @@
-//global variable for color
+//var global buat warna tinta
 let color = "black";
 let click = false;
 
-//domcontentloaded = wait until the html file loaded first
+//domcontentloaded = tunggu sampe html filenya ke load dlu
 document.addEventListener('DOMContentLoaded', function(){
     createBoard(16);
 
-    document.querySelector('body').addEventListener("click", function(e){
+    document.querySelector('.board').addEventListener("click", function(e){
         if (e.target.tagName != "BUTTON"){
             click =! click;
             let draw = document.getElementById("draw");
             if (click){
                 draw.textContent = "You can draw";
+                draw.style.color = "black";
             } else {
-                draw.textContent = "You cannot draw";
+                draw.textContent= "You cannot draw";
+                draw.style.color = "red";
             }
+
         }
     })
     
